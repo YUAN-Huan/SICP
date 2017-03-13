@@ -1,2 +1,6 @@
 # SICP
-自己做的答案
+3.1
+(define (make-accumulator balance)
+  (lambda (amount)
+    (begin (set! balance (+ balance amount))
+           balance)))
